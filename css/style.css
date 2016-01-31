@@ -1,0 +1,61 @@
+body{
+background-color: #c8c8c8;
+}
+
+
+.odd{
+    background-color: steelblue;
+}
+
+.even{
+     background-color: #88c8c8;   
+}
+
+.thisMessage{
+    background-color: yellow;   
+}
+
+.date{
+	    width: 10%;
+    background-color: #88c8c8;
+    float: left;  
+}
+
+.subject{
+	    width: 30%;
+    background-color: #88c8c8;    
+}
+
+.sender{	
+        width: 30%;
+    background-color: #88c8c8;   
+}
+
+#messageCount{
+	float: right;
+}
+
+#messageCountNotice{
+	float: right;
+}
+
+
+.clearFloat{
+	clear: left;
+}
+
+#mailTable{
+    padding-left: 50px;
+}
+
+.{
+font-size: 10px;
+}
+
+.mail10{
+    font-size: 20px;
+}
+
+.mailGreaterThan10{
+    font-size: 30px;
+}

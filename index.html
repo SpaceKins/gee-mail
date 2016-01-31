@@ -1,18 +1,35 @@
 <html>
 	<head>
 		<script src="js/mail-generator.js"></script>
+		<script src="js/gau_geeMail.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
-    <script>
-      window.onload = function(){
-        // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
-      };
-    </script>
+		<script>
+			window.onload = function(){
+		// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE.
+		// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+		displayMessages(window.geemails);
+		
+		setMessagePreview("");
+		setInterval(function(){ addNewMessage(); //alert("Hello");
+		},1000);
+		};
+
+		</script>
+		<title>GauGeeMail</title>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+			<div><span>My GauGeeMail!</span><span id='messageCount' class=""></span><span id='messageCountNotice'>Gee You have</span></div>
+			<table id='mailTable' cellspacing= "0">
+				<thead>
+					<tr><th></th></th><th>Date</th><th>Sender</th><th>Subject</tr></th></tr></thead>
+				<tbody></tbody>
+			</table>
 		</div>
+		<section id="messagePreviewSect">
+			<div id="messagePreview"> </div>
+		</section>
+		
 	</body>
 </html>
